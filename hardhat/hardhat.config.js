@@ -1,5 +1,8 @@
-require("@nomicfoundation/hardhat-toolbox");
-require("dotenv").config({ path: ".env" });
+require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-etherscan");
+require("hardhat-deploy");
+require("hardhat-contract-sizer");
+require("dotenv").config();
 
 const ANKR_RPC_URL = process.env.ANKR_RPC_URL;
 

@@ -5,12 +5,12 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract BasicNft is ERC721 {
     string public constant TOKEN_URI =
-        "ipfs://QmdryoExpgEQQQgJPoruwGJyZmz6SqV4FRTX1i73CT3iXn";
+        "ipfs://QmWaLBNEtSc1sn6Ajvc7ZSxZeqxAQ2REXU8MoGcPYobdYj";
     uint256 private s_tokenCounter;
 
     event DogMinted(uint256 indexed tokenId);
 
-    constructor() ERC721("Dogie", "DOG") {
+    constructor() ERC721("Doctor", "DOC") {
         s_tokenCounter = 0;
     }
 
